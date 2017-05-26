@@ -9,12 +9,14 @@ namespace TestModels
     {
 
         [DataMember]
-
         public string FirstName { get; set; }
 
         [DataMember]
+        public int Age { get; set; }
 
-        public string LastName { get; set; }
-
+        public string SerializeToJson()
+        {
+            return "";
+        }
     }
 }
